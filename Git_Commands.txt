@@ -1,0 +1,39 @@
+Git Commands:---
+To know username and email  :-  git config user.name  , git config user.email
+To see all configurations  :-  git config --list
+
+git init   :- Initialise empty git repository
+git status :- Check Status
+git add <filename>  :- To add to the staging area
+git rm --cached <filename>   :- To remove from the staging area back to untracked file
+git commit -m "first commit"  :- TO commit the file 
+git add -A    :- To add all the untracked files to staging area 
+git checkout <filename> , git restore <filename>   :- To remove from the modified . (When we have done some mistake and we want to revert back)
+git restore --staged <filename>   :-  file gone from modified to staged can be put back to unstaged by using this command
+git diff       :- To track changes in the files which are unstaged.Shows newly added lines.
+git diff --staged    :- to track changes in the files which are in staged area.
+git diff HEAD     :- To track files changed which are commited.
+git show    :- to show the objects
+git log    :- To see all the commits 
+git log -p -2    :- to see last two commits
+git log --stat     :- To see all the logs which are modified
+git rm -f services.html <filename>    :- To delete the file 
+git branch --list    :- To show the number of branches we have
+git branch <branchname>   :- To create the branch
+git checkout <branchname>   :- to move the different branches
+git branch -D <branchname>     :- To delete the branch while you are on another branch 
+git branch -d <branchname>   :- To delete the branch while the branches are merged
+git checkout -b <branchname>     :- To create the branch and switch to that branch
+git add . && git commit -am "comment"    :- To add and commit using the single statement
+git remote add origin <gitpath>    :- Step one to push the existing repository to the github 
+git remote -v   :- to see the fetch and push paths
+git branch -M main     :- To change the master branch to main
+
+
+Note  :- git config --global http.sslVerify false    :-(fatal: unable to access 'https://github.com/NitishPradhan305/git-tutorial.git/':
+                                                         SSL certificate problem: self signed certificate in certificate chain)
+
+git push -u origin 'main'    :- To push to the remote repository
+git push -u origin nitish    :- To push the branch to the remote repository
+
+
